@@ -8,4 +8,4 @@ jobs:
       board: '["nice_nano"]'
       shield: '["cradio_left","cradio_right"]'
       kconfig: '["CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y"]'
-      custom_config: '["#define MIRYOKU_CLIPBOARD_MAC\n"]'
+      custom_config: '["#define MIRYOKU_CLIPBOARD_MAC\n#define MIRYOKU_KLUDGE_SUSPEND"]'
