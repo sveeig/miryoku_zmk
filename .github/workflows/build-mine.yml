@@ -5,7 +5,8 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano"]'
+#      board: '["nice_nano"]'
+      board: '["promicro_nrf52840"]'
       shield: '["cradio_left","cradio_right"]'
-      # kconfig: '["CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y"]'
+      kconfig: '["CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY=y\nCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y"]'
       custom_config: '["#define MIRYOKU_CLIPBOARD_MAC\n"]'
